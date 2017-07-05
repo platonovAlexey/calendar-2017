@@ -1,0 +1,199 @@
+include blocks/head-service/head
+include common/mixins.jade
+include common/js.jade
+
+body
+	.layout_center_wrapper-project
+		+top-line()
+		header.header
+			.container
+				.row
+					.col-lg-4.col-md-3
+					.col-lg-5.col-md-6.col-sm-8.col-xs-12
+						.title__block
+							h1.title
+								| Прогноз
+								br
+								span Скидок
+							.title__desc
+								| вероятность выгоды 100%
+					.col-lg-3.col-md-3.col-sm-4.col-xs-12
+						.sale__block
+							.sale__20
+								|от
+								span 10%
+							.sale__30
+								|до
+								span 30%
+				.row
+					.col-lg-8.col-md-9.col-lg-offset-4.col-md-offset-3.col-xs-12
+						.everyday
+							|Следи за прогнозом скидок каждый день в году
+		section.section__months
+			.container
+				.row
+					.col-lg-6.col-md-6.col-lg-offset-6.col-md-offset-6
+						.months
+							.months__buttons
+								.months__prev
+								.months__next
+							.months__title
+								|июль
+		main.main
+			.container
+				.row
+					+grid-3()
+							each item, number in cards.slice(1,2)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(2,3)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(3,4)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(4,5)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(5,6)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(6,7)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(7,8)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(8,9)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(9,10)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(10,11)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(11,12)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(12,13)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(13,14)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(14,15)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(15,16)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(16,17)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(17,18)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(18,19)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(19,20)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(20,21)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(21,22)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(22,23)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(23,24)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(24,25)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(25,26)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(26,27)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(27,28)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(28,29)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(29,30)
+								+active-cards(item)
+					+grid-3()
+							each item, number in cards.slice(30,31)
+								+active-cards(item)
+								
+					//- Состояния карточек
+					//- .col-lg-3.col-md-3.col-sm-6.col-xs-12
+					//- 	.card__wrapper
+					//- 		.card__disable.card__default
+					//- 			.card__number
+					//- 				|16
+					//- 			.card__day
+					//- 				|понедельник
+					//- 			.card__sale
+					//- 				span -30%
+					//- 			.card__icon
+					//- 			.card__category
+					//- 				|декоративная косметика
+					//- 			a(href="#", target="_blank", class="card__link")
+					//- 				|Ожидается
+					//- .col-lg-3.col-md-3.col-sm-6.col-xs-12
+					//- 	.card__wrapper
+					//- 		.card__active.card__default
+					//- 			.card__number
+					//- 				|13
+					//- 			.card__day
+					//- 				|понедельник
+					//- 			.card__sale
+					//- 				span -30%
+					//- 			.card__icon
+					//- 				img(src="../img/card__icon.png", alt="")
+					//- 			.card__category
+					//- 				|декоративная косметика
+					//- 			a(href="#", target="_blank", class="card__link")
+					//- 				|перейти к покупкам>
+					//- .col-lg-3.col-md-3.col-sm-6.col-xs-12
+					//- 	.card__wrapper
+					//- 		.card__completed.card__default
+					//- 			.completed
+					//- 				|завершено
+					//- 			.card__number
+					//- 				|10
+					//- 			.card__day
+					//- 				|понедельник
+					//- 			.card__sale
+					//- 				span -30%
+					//- 			.card__icon
+					//- 			.card__category
+					//- 				|декоративная косметика
+					//- .col-lg-3.col-md-3.col-sm-6.col-xs-12
+					//- 	.card__wrapper
+					//- 		.card__empty.card__default
+					//- 			.card__number
+					//- 				|15
+					//- 			.card__day
+					//- 				|понедельник
+					//- 			.card__icon
+					//- 			.card__category
+					//- 				|скидки
+					//- 				br
+					//- 				|затаились
+
+
+
+			
+	+footer-text()
+
+
+	include blocks/footer-service/footer-service

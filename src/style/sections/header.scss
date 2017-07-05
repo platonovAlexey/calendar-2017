@@ -1,0 +1,143 @@
+//DEFAULT STYLE//
+.top__line{
+	position: relative;
+	z-index: 100;
+	.ulmart__logo{
+		float: left;
+		margin-top: 24px;
+		@include MQ(sm) {
+			margin-left: 10px;
+		}
+		@include MQ(xs) {
+			display: block;
+			float: none;
+			text-align: center;
+			margin-left: 0;
+		}
+	}
+	.ulmart__shop{
+		display: block;
+		float: right;
+		font-size: .75em;
+		background: #fff;
+		color: #221f1f;
+		text-align: center;
+		padding: 10px 15px;
+		border-radius: 30px;
+		margin: 20px 0;
+		box-shadow: 0px 1px 0px rgba(0,0,0,.7);
+		transition: all .8s;
+		@include MQ(sm) {
+			margin-right: 10px;
+		}
+		@include MQ(xs) {
+			float: none;
+			font-size: 1em;
+			margin: 20px 15px;
+		}
+		&:hover{
+			background: #e89607;
+			color: #fff;
+			transition: all .8s;
+		}
+	}
+}
+
+.top__banner{
+	position: relative;
+	.top__banner__img{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.header{
+	position: relative;
+}
+
+.header__banner{
+	display: block;
+	margin: 0 auto;
+}
+
+.header__title{
+	font-size: 66px;
+	color:#fefefe;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.title{
+	font-size: em($h1FZ);
+	text-transform: uppercase;
+	color: #fefefe;
+	margin: 0;
+	span{
+		font-weight: 300;
+		font-style: italic;
+		font-size: 1.1em;
+	}
+}
+
+.title__desc{
+	font-size: em($h1desc);
+	text-transform: uppercase;
+	color: #fefefe;
+	font-weight: 300;
+	font-style: italic;
+	margin-top: 25px;
+}
+
+.header{
+	background: url(https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/top-banner-july.jpg)no-repeat center center;
+	background-size: cover;
+	top: -240px;
+	z-index: 10;
+	height: 796px;
+	position: relative;
+	&:after{
+		content: "";
+		display: block;
+		width: 108px;
+		height: 54px;
+		background: url(https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/header-after-july.png)no-repeat;
+		position: absolute;
+		bottom: -53px;
+		right: 31.4%;
+	}
+}
+
+.title__block{
+	z-index: 101;
+	position: relative;
+	top: 400px;
+	line-height: 0.9;
+	border-right: 3px solid #fefefe;
+	padding: 20px 0;
+}
+
+.sale__block{
+	z-index: 101;
+	position: relative;
+	top: 400px;
+	.sale__20, .sale__30{
+		font-size: 20px;
+		color: #fefefe;
+		line-height:1;
+		span{
+			font-size: 5em;
+			color: #fefefe;
+			padding-left: 30px;
+		}
+	}
+}
+
+.everyday{
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fefefe;
+	position: absolute;
+	top: 480px;
+}

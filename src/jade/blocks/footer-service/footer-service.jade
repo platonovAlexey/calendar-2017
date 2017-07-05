@@ -1,0 +1,41 @@
+script(src='js/main.js')
+script.
+	function pushStateToDataLayerLogo(event) {
+		return function(label, location) {
+				dataLayer.push({
+						'event':'OWOX',
+						'eventCategory': 'Interactions',
+						'eventAction': 'click',
+						'eventLabel': label,
+						'eventContent': event.target.innerHTML.trim(),
+						'eventLocation': location
+				});
+				console.log('click cards');
+		}
+	};
+	function pushStateToDataLayerSiteGo(event) {
+		return function(label, location) {
+				dataLayer.push({
+						'event':'OWOX',
+						'eventCategory': 'Interactions',
+						'eventAction': 'click',
+						'eventLabel': label,
+						'eventContent': event.target.innerHTML.trim(),
+						'eventLocation': location
+				});
+				console.log('click cards');
+		}
+	};
+	function pushStateToDataLayerDay(event) {
+		return function(label, location) {
+				dataLayer.push({
+						'event':'OWOX',
+						'eventCategory': 'Interactions',
+						'eventAction': 'click',
+						'eventLabel': label,
+						'eventContent': event.target.innerHTML.trim(),
+						'eventLocation': location
+				});
+				console.log('click cards');
+		}
+	};

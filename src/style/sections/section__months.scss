@@ -1,0 +1,44 @@
+.section__months{
+	margin-top: -190px;
+}
+.months{
+	position: relative;
+	overflow: hidden;
+	.months__buttons{
+		@include clearfix;
+		position: relative;
+		.months__prev{
+			display: none;
+			background: url(../img/arr-left.png)no-repeat;
+			width: 22px;
+			height: 38px;
+			position: absolute;
+			top: 50px;
+			left: 0;
+			&:hover{
+				cursor: pointer;
+				opacity: .5;
+			}
+		}
+		.months__next{
+			display: none;
+			background: url(../img/arr-right.png)no-repeat;
+			width: 22px;
+			height: 38px;
+			position: absolute;
+			top: 50px;
+			right: 0;
+			&:hover{
+				cursor: pointer;
+				opacity: .5;
+			}
+		}
+	}
+	.months__title{
+		font-size: 89px;
+		font-weight: bold;
+		color: #fdbc40;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

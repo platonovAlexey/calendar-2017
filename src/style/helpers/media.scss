@@ -1,0 +1,170 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1024px) {
+	.card__wrapper{
+		height: 460px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.card__completed .completed{
+		left: -23px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header{
+		background-position: bottom center;
+	}
+	.card__completed .completed{
+		left: 45px;
+	}
+	.card__wrapper{
+		height: 440px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+@media only screen and (max-width : 767px){
+	.header .container .row .col-xs-8, .header .container .row .col-xs-4, .container .row .col-xs-12{
+		width: 100%;
+	}
+	.main .container .row .col-xs-12{
+		width: 50%;
+	}
+	.title__block{
+		border-right: none;
+		text-align: center;
+	}
+	.sale__block, .title__block{
+		top: 300px;
+	}
+	.title{
+		font-size: 3em;
+	}
+	.title__desc{
+		font-size: 1.4em;
+		margin-top: 10px;
+	}
+	.sale__block{
+		text-align: center;
+	}
+	.sale__block .sale__20 span, .sale__block .sale__30 span{
+		font-size: 2em;
+	}
+	.everyday{
+		top: 350px;
+		position: relative;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.header{
+		background-position: left top;
+		height: 666px;
+	}
+}
+
+@media only screen and (max-width : 600px){
+	.card__completed .completed {
+		left: -12px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.header{
+		background-position: center center;
+	}
+	.main .container .row .col-xs-12{
+		width: 100%;
+	}
+	.card__completed .completed {
+		left: 88px;
+	}
+	.months .months__title{
+		font-size: 65px;
+	}
+	.months .months__buttons .months__prev, .months .months__buttons .months__next{
+		top:30px;
+	}
+	.everyday{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width : 375px){
+	.card__completed .completed {
+		left: 65px;
+	}
+}
+
+@media only screen and (max-width : 320px){
+	.card__completed .completed {
+		left: 0px;
+	}
+	.title__desc{
+		font-size: 1.2em;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

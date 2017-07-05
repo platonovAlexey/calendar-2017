@@ -1,0 +1,622 @@
+include ./js.jade
+
+-
+	var cards = 
+	[
+	{
+	"id": "1",
+	"day": "суббота",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-01.png",
+	"category": "Зонты",
+	"link": "https://www.ulmart.ru/Promokod1july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-1",
+	"promocode": "1июля"
+	},
+	{
+	"id": "2",
+	"day": "воскресенье",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-02.png",
+	"category": "Туристическая посуда",
+	"link": "https://www.ulmart.ru/Promokod2july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-2",
+	"promocode": "2июля"
+	},
+	{
+	"id": "3",
+	"day": "понедельник",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-03.png",
+	"category": "Гладильные доски",
+	"link": "https://www.ulmart.ru/Promokod3july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-3",
+	"promocode": "3июля"
+	},
+	{
+	"id": "4",
+	"day": "вторник",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-04.png",
+	"category": "Кабели Nexprot",
+	"link": "https://www.ulmart.ru/Promokod4july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-4",
+	"promocode": "4июля"
+	},
+	{
+	"id": "5",
+	"day": "среда",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-05.png",
+	"category": "Сковороды, кастрюли, ковши и крышки",
+	"link": "https://www.ulmart.ru/Promokod5july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-5",
+	"promocode": "5июля"
+	},
+	{
+	"id": "6",
+	"day": "четверг",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-06.png",
+	"category": "Амортизаторы",
+	"link": "https://www.ulmart.ru/Promokod6july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-6",
+	"promocode": "6июля"
+	},
+	{
+	"id": "7",
+	"day": "пятница",
+	"sale": "-10",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-07.png",
+	"category": "Велосипеды и самокаты",
+	"link": "https://www.ulmart.ru/Promokod7july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-7",
+	"promocode": "7июля"
+	},
+	{
+	"id": "8",
+	"day": "суббота",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-08.png",
+	"category": "Одежда для новорожденных",
+	"link": "https://www.ulmart.ru/Promokod8july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-8",
+	"promocode": "8июля"
+	},
+	{
+	"id": "9",
+	"day": "воскресенье",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-09.png",
+	"category": "Средства против комаров и пр",
+	"link": "https://www.ulmart.ru/Promokod9july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-9",
+	"promocode": "9июля"
+	},
+	{
+	"id": "10",
+	"day": "понедельник",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-10.png",
+	"category": "Средства для загара",
+	"link": "https://www.ulmart.ru/Promokod10july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-10",
+	"promocode": "10июля"
+	},
+	{
+	"id": "11",
+	"day": "вторник",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-11.png",
+	"category": "Уход за телом и волосами",
+	"link": "https://www.ulmart.ru/Promokod11july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-11",
+	"promocode": "11июля"
+	},
+	{
+	"id": "12",
+	"day": "среда",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-12.png",
+	"category": "Круги для купания",
+	"link": "https://www.ulmart.ru/Promokod12july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-12",
+	"promocode": "12июля"
+	},
+	{
+	"id": "13",
+	"day": "четверг",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-13.png",
+	"category": "Помады",
+	"link": "https://www.ulmart.ru/Promokod13july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-13",
+	"promocode": "13июля"
+	},
+	{
+	"id": "14",
+	"day": "пятница",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-14.png",
+	"category": "Диапроекторы и диафильмы",
+	"link": "https://www.ulmart.ru/Promokod14july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-14",
+	"promocode": "14июля"
+	},
+	{
+	"id": "15",
+	"day": "суббота",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-15.png",
+	"category": "Детская одежда и обувь",
+	"link": "https://www.ulmart.ru/Promokod15july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-15",
+	"promocode": "15июля"
+	},
+	{
+	"id": "16",
+	"day": "воскресенье",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-16.png",
+	"category": "Ламинат и паркет",
+	"link": "https://www.ulmart.ru/Promokod16july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-16",
+	"promocode": "16июля"
+	},
+	{
+	"id": "17",
+	"day": "понедельник",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-17.png",
+	"category": "Сушилки для белья",
+	"link": "https://www.ulmart.ru/Promokod17july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-17",
+	"promocode": "17июля"
+	},
+	{
+	"id": "18",
+	"day": "вторник",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-18.png",
+	"category": "Душевые кабины",
+	"link": "https://www.ulmart.ru/Promokod18july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-18",
+	"promocode": "18июля"
+	},
+	{
+	"id": "19",
+	"day": "среда",
+	"sale": "-25",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-19.png",
+	"category": "Мужские рубашки",
+	"link": "https://www.ulmart.ru/Promokod19july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-19",
+	"promocode": "19июля"
+	},
+	{
+	"id": "20",
+	"day": "четверг",
+	"sale": "-30",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-20.png",
+	"category": "Lego",
+	"link": "https://www.ulmart.ru/Promokod20july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-20",
+	"promocode": "20июля"
+	},
+	{
+	"id": "21",
+	"day": "пятница",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-21.png",
+	"category": "Средства для депиляции",
+	"link": "https://www.ulmart.ru/Promokod21july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-21",
+	"promocode": "21июля"
+	},
+	{
+	"id": "22",
+	"day": "суббота",
+	"sale": "-10",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-22.png",
+	"category": "Спортивная одежда и обувь",
+	"link": "https://www.ulmart.ru/Promokod22july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-22",
+	"promocode": "22июля"
+	},
+	{
+	"id": "23",
+	"day": "воскресенье",
+	"sale": "-20",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-23.png",
+	"category": "Садовые фонари на солнечных батареях",
+	"link": "https://www.ulmart.ru/Promokod23july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-23",
+	"promocode": "23июля"
+	},
+	{
+	"id": "24",
+	"day": "понедельник",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-24.png",
+	"category": "Фотобумага",
+	"link": "https://www.ulmart.ru/Promokod24july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-24",
+	"promocode": "24июля"
+	},
+	{
+	"id": "25",
+	"day": "вторник",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-25.png",
+	"category": "Деревянные игрушки",
+	"link": "https://www.ulmart.ru/Promokod25july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-25",
+	"promocode": "25июля"
+	},
+	{
+	"id": "26",
+	"day": "среда",
+	"sale": "-17",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-26.png",
+	"category": "Краски и эмали",
+	"link": "https://www.ulmart.ru/Promokod26july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-26",
+	"promocode": "26июля"
+	},
+	{
+	"id": "27",
+	"day": "четверг",
+	"sale": "-30",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-27.png",
+	"category": "Женская обувь и аксессуары",
+	"link": "https://www.ulmart.ru/Promokod27july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-27",
+	"promocode": "27июля"
+	},
+	{
+	"id": "28",
+	"day": "пятница",
+	"sale": "-30",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-28.png",
+	"category": "Мягкие игрушки",
+	"link": "https://www.ulmart.ru/Promokod28july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-28",
+	"promocode": "28июля"
+	},
+	{
+	"id": "29",
+	"day": "суббота",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-29.png",
+	"category": "Игрушки для песочницы",
+	"link": "https://www.ulmart.ru/Promokod29july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-29",
+	"promocode": "29июля"
+	},
+	{
+	"id": "30",
+	"day": "воскресенье",
+	"sale": "-15",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-30.png",
+	"category": "Бескаркасная мебель",
+	"link": "https://www.ulmart.ru/Promokod30july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-30",
+	"promocode": "30июля"
+	},
+	{
+	"id": "31",
+	"day": "понедельник",
+	"sale": "-30",
+	"image": "https://fast.ulmart.ru/ns/verstka/calendar_2017_july/img/icon-july-31.png",
+	"category": "Женская одежда",
+	"link": "https://www.ulmart.ru/Promokod31july?sort=5&viewType=0&rec=false",
+	"titleCompleted": "завершено",
+	"titleEmpty": "ожидается",
+	"goPurchase": "перейти к покупке",
+	"data": "2017-07-31",
+	"promocode": "31июля"
+	}
+	]
+
+	
+	var topBannerPath = "https://fast.ulmart.ru/ns/verstka/bcn/img/top-banner.jpg";
+	var topBannerPathOut = "img/top-banner.jpg";
+	var pathCardImgAdmin = "https://fast.ulmart.ru/ns/verstka/bcn/img/";
+	var pathCardImgLocal = "img/";
+	
+//- Хедер логотипы(белый и красный) и конопка ведущая на Юлмарт
+mixin top-line()
+	.top__line
+		.container
+			.row
+				a(class="ulmart__logo" href="https://www.ulmart.ru/", target="_blank", onclick="pushStateToDataLayerLogo(event) ('CalendarLogo', 'logo')")
+					//- img(src="https://fast.ulmart.ru/ns/verstka/calendar_2017/img/ulmart-logo-red.png", alt="logo")
+					img(src="https://fast.ulmart.ru/ns/verstka/calendar_2017/img/ulmart-logo-white.png", alt="logo")
+				a(class="ulmart__shop" href="https://www.ulmart.ru/", target="_blank", onclick="pushStateToDataLayerSiteGo(event) ('CalendarSiteGo', 'site')") Перейти к покупкам на ulmart.ru
+
+//- Топ баннер(в контейнере, возможно и на всю ширину)
+mixin top-banner()
+	section.top__banner
+		.container
+			.row
+				img(class="top__banner__img" src="#{topBannerPath}", alt="topBanner")
+					
+mixin top-banner-out()
+	section.top__banner
+		img(class="top__banner__img" src="#{topBannerPathOut}", alt="top banner")
+
+//- Все карточки
+mixin all-cards(cards)
+	.card__wrapper
+		div(class="card__default" id="cards_"+"#{cards.id}")
+
+//- Не активная карточка
+mixin disable-cards(cards)
+	.card__wrapper
+		div(class="card__disable card__default" id="cards_"+"#{cards.id}" data="#{cards.data}")
+			.card__number
+				| #{cards.id}
+			.card__day
+				| #{cards.day}
+			.card__sale
+				span #{cards.sale + '%'}
+			.card__icon
+				img(src="#{cards.image}", alt="icon")
+			.card__category
+				| #{cards.category}
+			a(href="#{cards.link}", target="_blank", class="card__link", onclick="pushStateToDataLayerDay(event) ('CalendarDay', 'day')")
+				| #{cards.titleEmpty}
+
+//- Пустая - не активная карточка
+mixin disable-cards-empty(cards)
+	.card__wrapper
+		.card__disable.card__default
+			.card__number
+				| #{cards.id}
+			.card__day
+				| #{cards.day}
+			.card__icon
+				img(src="#{cards.image}", alt="icon")
+			.card__category
+				| #{cards.titleEmpty}
+
+//-Активная карточка
+mixin active-cards(cards)
+	.card__wrapper
+		div(class="card__active card__default" id="cards_"+"#{cards.id}" data="#{cards.data}")
+			.card__number
+				| #{cards.id}
+			.card__day
+				| #{cards.day}
+			.card__sale
+				span #{cards.sale + '%'}
+			.card__promocode
+				| По промокоду: 
+				span #{cards.promocode}
+			.card__icon
+				img(src="#{cards.image}", alt="icon")
+			.card__category
+				| #{cards.category}
+			a(href="#{cards.link}", target="_blank", class="card__link", onclick="pushStateToDataLayerDay(event) ('CalendarDay', 'day')")
+				| #{cards.goPurchase + '>'}
+
+//- завершено
+mixin completed-cards(cards)
+	.card__wrapper
+		.card__completed.card__default
+			.completed
+				| #{cards.titleCompleted}
+			.card__number
+				| #{cards.id}
+			.card__day
+				| #{cards.day}
+			.card__sale
+				span #{cards.sale + '%'}
+			.card__icon
+				img(src="#{cards.image}", alt="icon")
+			.card__category
+				| #{cards.category}
+
+//- пустая карточка
+mixin empty-cards(cards)
+	.card__wrapper
+		div(class="card__empty card__default" id="cards_"+"#{cards.id}" data="#{cards.data}")
+			.card__number
+				| #{cards.id}
+			.card__day
+				| #{cards.day}
+			.card__icon
+				img(src="#{cards.image}", alt="icon")
+			.card__category
+				| #{cards.titleEmpty}
+
+//- завершено пустая карточка
+mixin completed-cards-empty(cards)
+	.card__wrapper
+		div(class="completed-cards-empty card__default" id="cards_"+"#{cards.id}" data="#{cards.data}")
+			.completed
+				| #{cards.titleCompleted}
+			.card__number
+				| #{cards.id}
+			.card__day
+				| #{cards.day}
+			.card__icon
+				img(src="#{cards.image}", alt="icon")
+			.card__category
+				| #{cards.titleEmpty}
+
+//- Товары
+mixin goods(data)
+	.goods__item
+		.goods__wrap__img
+			a(class="goods__picture__wrap" href= "#{data.link}" target="_blank")
+				img(class="goods__picture" src="#{pathCardImgAdmin + data.id + '.jpg'}")
+		.goods__wrap__name
+			.goods__name
+				| #{data.title}
+		.goods__wrap__price
+			.price__block
+				.goods__retail__price
+					| #{data.oldPrice}.-
+				.goods__start__price
+					| #{data.price}.-
+		a(class="goods__link", href= "#{data.link}") Купить
+		
+
+//- Товары с промокодом и выгодой
+mixin goods-promocode(data)
+	.goods__item.goods__item__promocode
+		.goods__sale
+			| Выгода 
+			br
+			span #{data.sale}
+		.goods__wrap__img
+			a(class="goods__picture__wrap" href= "#{data.link}" target="_blank")
+				img(class="goods__picture" src="#{pathCardImgAdmin + data.id + '.jpg'}")
+		.goods__wrap__name
+			.goods__name
+				| #{data.title}
+		.promocode
+			| Промокод: 
+			span #{data.promocode}
+		.goods__wrap__price
+			.price__block
+				.goods__retail__price
+					| #{data.oldPrice}.-
+				.goods__start__price
+					| #{data.price}.-
+		a(class="goods__link", href= "#{data.link}") Купить
+		
+		
+//- Товары для аукциона
+mixin goods-auction(data)
+	.goods__item.goods__item__auction
+		.goods__wrap__img
+			a(class="goods__picture__wrap" href= "#{data.link}" target="_blank")
+				img(class="goods__picture" src="#{pathCardImgAdmin + data.id + '.jpg'}")
+		.goods__wrap__name
+			.goods__name
+				| #{data.title}
+		.goods__wrap__price
+			.price__block
+				.goods__retail 
+					| Розничная цена
+				.goods__price__retail
+					| #{data.oldPrice}.-
+			.price__block
+				.goods__start
+					| Стартовая цена
+				.goods__price__start
+					| #{data.price}.-
+		a(class="goods__link", href= "#{data.link}") О товаре
+			
+
+//- Сетка по 3 товара
+mixin grid-4()
+	.col-lg-4.col-md-4.col-sm-6.col-xs-12
+		block
+			
+//- Сетка по 4 товара
+mixin grid-3()
+	.col-lg-3.col-md-3.col-sm-6.col-xs-12
+		block
+			
+//- Футер служебка
+mixin footer-text()
+	footer.footer
+		.container
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+					.footer__block
+						.footer__text
+							
