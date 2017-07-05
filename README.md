@@ -1,9 +1,9 @@
-# Сборка Юлмарт v2
+# Календарь скидок
 
 ## Установка
 
 ```sh
-$ git clone https://github.com/platonovAlexey/ulmart_start_v2.git #название папки
+$ git clone https://github.com/platonovAlexey/calendar-2017.git #название папки
 $ cd #название папки
 $ npm install
 ```
