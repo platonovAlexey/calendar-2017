@@ -40,8 +40,6 @@ body
 							.months__title
 								|июль
 		section.make__section
-			h2.make__title
-				|Как купить товар по акции 
 			.tabbed
 				.container
 					.row
@@ -54,66 +52,27 @@ body
 								input#tab-nav-2(type='radio', name='tabs', checked='')
 								label(for='tab-nav-2') Прогноз
 		.tabs__wrapper.tabs__wrapper__online
+			main.main
 			.container
-				.row
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|1
-							.tabs__item__text
-								b Выберите товар со значком
-								br
-								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|2
-							.tabs__item__text
-								b Выберите «Самовывоз».
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item
-							.tabs__item__img
-								|3
-							.tabs__item__text
-								b Введите промокод 
-								span 006&nbsp;
-								br
-								|на этапе подтверждения заказа и дождитесь звонка банка для заполнения анкеты по телефону.
-		.tabs__wrapper.tabs__wrapper__offline
-			.container
-				.row
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|1
-							.tabs__item__text
-								b Оформите заказ на товар, отмеченный значком 
-								img(src="https://fast.ulmart.ru/ns/verstka/installment_promo/img/credit-bablze.png", alt="")
-								br
-								|и распечатайте чек на оплату.
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item.tabs__item--mod
-							.tabs__item__img
-								|2
-							.tabs__item__text
-								b Подайте заявку в кредитном отделе 
-								br
-								|(подать заявку можно в кредитном отделе центра исполнения заказов Юлмарт (ЦИЗ), при себе необходимо иметь паспорт).
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
-						.tabs__item
-							.tabs__item__img
-								|3
-							.tabs__item__text
-								b Забирайте покупку.
-		main.mains
-			.container
+				|Прогноз
 				- var date = new Date();
+
 				each item, number in cards
 					if ((number % 4) == 0)
 						.row
 							each item, j in cards.slice(number, number+4)
 								+grid-3()
 									+active-cards(item)
+		.tabs__wrapper.tabs__wrapper__offline
+			main.main
+				.container
+					- var date = new Date();
+					each item, number in cards
+						if ((number % 4) == 0)
+							.row
+								each item, j in cards.slice(number, number+4)
+									+grid-3()
+										+active-cards(item)
 
 
 
